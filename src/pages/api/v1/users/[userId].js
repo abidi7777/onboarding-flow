@@ -13,27 +13,31 @@ const initDB = async () => {
 };
 
 export default async function handler(req, res) {
-  if (req.method === 'POST') {
-    const { userId } = req.query;
+  try {
+    if (req.method === 'POST') {
+      const { userId } = req.query;
 
-    await initDB();
+      await initDB();
 
-    const duplicateUser = db.data.users.find((user) => user.userId === userId);
+      const duplicateUser = db.data.users.find((user) => user.userId === userId);
 
-    if (duplicateUser) {
-      duplicateUser.products = req.body.products;
-    } else {
-      db.data.users.push(req.body);
+      if (duplicateUser) {
+        duplicateUser.products = req.body.products;
+      } else {
+        db.data.users.push(req.body);
+      }
+
+      await db.write();
+
+      res.status(201).json({ data: req.body });
+    } else if (req.method === 'GET') {
+      const { userId } = req.query;
+
+      await initDB();
+
+      res.status(200).json({ data: db.data.users.find((user) => user.userId === userId) });
     }
-
-    await db.write();
-
-    res.status(201).json({ data: req.body });
-  } else if (req.method === 'GET') {
-    const { userId } = req.query;
-
-    await initDB();
-
-    res.status(200).json({ data: db.data.users.find((user) => user.userId === userId) });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
   }
 }
