@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": "Chargebee",
+    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Chargebee-logo_58JaJG0WTx.png"
+  },
+  {
+    "id": "2",
+    "name": "Notion",
+    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Notion_app_logo_BpjHthrVOP.png"
+  },
+  {
+    "id": "3",
+    "name": "Freshworks",
+    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Freshworks-vector-logo.svg_rE30SHb7eN.png"
+  },
+  {
+    "id": "4",
+    "name": "Azure",
+    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Microsoft_Azure.svg_Ml_YDQ1x-2.png"
+  },
+  {
+    "id": "5",
+    "name": "Slack",
+    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Slack_icon_2019.svg_ceC-2ArTYb.png"
+  },
+  {
+    "id": "6",
+    "name": "Google",
+    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Google__G__Logo.svg_45nh-pIp_N.webp"
+  },
+  {
+    "id": "7",
+    "name": "Cred",
+    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/CRED-LOGO2_-HblfKWsK7.png"
+  },
+  {
+    "id": "8",
+    "name": "Credit",
+    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/4228_discord_bot_dev_7BXtbBRWx.png"
+  },
+  {
+    "id": "9",
+    "name": "Atlassian",
+    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Atlassian-icon-blue-onecolor_2x_-MTl1nb_H.png"
+  },
+  {
+    "id": "10",
+    "name": "BigBasket",
+    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/BigBasket_Logo_s4bHp0sBP.png.png"
+  }
+]
