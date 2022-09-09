@@ -3,16 +3,19 @@ import { Low, JSONFile } from 'lowdb';
 import path from 'path';
 
 const file = path.join(__dirname, '..', '..', 'data');
-const adapter = new JSONFile(file);
-const db = new Low(adapter);
-
-const initDB = async () => {
-  await db.read();
-
-  db.data ||= { users: [] };
-};
 
 export default async function handler(req, res) {
+  let db = null;
+
+  const initDB = async () => {
+    const adapter = new JSONFile(file);
+    db = new Low(adapter);
+
+    await db.read();
+
+    db.data ||= { users: [] };
+  };
+
   try {
     if (req.method === 'POST') {
       const { userId } = req.query;
