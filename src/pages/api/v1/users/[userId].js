@@ -2,7 +2,7 @@
 import { Low, JSONFile } from 'lowdb';
 import path from 'path';
 
-const file = path.join(__dirname, '..', '..', 'data');
+const file = path.resolve(process.cwd(), 'public', 'data.json');
 
 export default async function handler(req, res) {
   let db = null;
@@ -41,6 +41,7 @@ export default async function handler(req, res) {
       res.status(200).json({ data: db.data.users.find((user) => user.userId === userId) });
     }
   } catch (e) {
+    console.log(e);
     res.status(200).json({ data: req.body });
   }
 }
