@@ -6,7 +6,7 @@ const path = `${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/users`;
 export default function saveUserSelectedProducts({ userId, products }) {
   const serializedData = userSelectedProductsSerializer({ userId, products });
 
-  return clientFetch(`${path}/userId`, {
+  return clientFetch(`${path}/${userId}`, {
     method: 'POST',
     headers: {
       Accept: 'application/json',
