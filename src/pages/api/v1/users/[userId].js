@@ -41,7 +41,6 @@ export default async function handler(req, res) {
       res.status(200).json({ data: db.data.users.find((user) => user.userId === userId) });
     }
   } catch (e) {
-    console.log(e);
     res.status(200).json({ data: req.body });
   }
 }
