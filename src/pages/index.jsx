@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -6,8 +7,13 @@ import fetchProducts from '../utils/fetchProducts';
 
 export default function Home({ products }) {
   return (
-    <div className="container mx-auto flex min-h-screen w-screen items-center justify-center p-2">
-      <OnboardingSection products={products} />
+    <div>
+      <Head>
+        <title>Onboarding Flow</title>
+      </Head>
+      <div className="container mx-auto flex min-h-screen w-screen items-center justify-center p-2">
+        <OnboardingSection products={products} />
+      </div>
     </div>
   );
 }
