@@ -1,52 +1,57 @@
 [
   {
     "id": "1",
-    "name": "Chargebee",
-    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Chargebee-logo_58JaJG0WTx.png"
+    "name": "Google Admob",
+    "image": "https://ik.imagekit.io/abidi/onboarding-workflow/google-admob_AsCyQm3mte.svg"
   },
   {
     "id": "2",
-    "name": "Notion",
-    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Notion_app_logo_BpjHthrVOP.png"
+    "name": "Monzo",
+    "image": "https://ik.imagekit.io/abidi/onboarding-workflow/monzo_NDNTe6uB7.svg"
   },
   {
     "id": "3",
-    "name": "Freshworks",
-    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Freshworks-vector-logo.svg_rE30SHb7eN.png"
+    "name": "Figma",
+    "image": "https://ik.imagekit.io/abidi/onboarding-workflow/figma_DfzUB8fZLS.svg"
   },
   {
     "id": "4",
-    "name": "Azure",
-    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Microsoft_Azure.svg_Ml_YDQ1x-2.png"
+    "name": "Medium New",
+    "image": "https://ik.imagekit.io/abidi/onboarding-workflow/medium_new_K0iluMuce.svg"
   },
   {
     "id": "5",
-    "name": "Slack",
-    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Slack_icon_2019.svg_ceC-2ArTYb.png"
+    "name": "Yolo",
+    "image": "https://ik.imagekit.io/abidi/onboarding-workflow/yolo_ljIFmIXSUU.svg"
   },
   {
     "id": "6",
-    "name": "Google",
-    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Google__G__Logo.svg_45nh-pIp_N.webp"
+    "name": "Notability",
+    "image": "https://ik.imagekit.io/abidi/onboarding-workflow/notability_d5QwjYr8PQ.svg"
   },
   {
     "id": "7",
-    "name": "Cred",
-    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/CRED-LOGO2_-HblfKWsK7.png"
+    "name": "Notes",
+    "image": "https://ik.imagekit.io/abidi/onboarding-workflow/notes_GX0cgaVoVY.svg"
   },
   {
     "id": "8",
-    "name": "Credit",
-    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/4228_discord_bot_dev_7BXtbBRWx.png"
+    "name": "Google",
+    "image": "https://ik.imagekit.io/abidi//onboarding-workflow/google_g9uI_iKTlJ.svg"
   },
   {
     "id": "9",
-    "name": "Atlassian",
-    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/Atlassian-icon-blue-onecolor_2x_-MTl1nb_H.png"
+    "name": "Jira",
+    "image": "https://ik.imagekit.io/abidi/onboarding-workflow/jira_7c5_Hk8Mi0.svg"
   },
   {
     "id": "10",
-    "name": "BigBasket",
-    "image": "https://ik.imagekit.io/abidi/tr:w-100,h-100/BigBasket_Logo_s4bHp0sBP.png.png"
+    "name": "Meetup",
+    "image": "https://ik.imagekit.io/abidi/onboarding-workflow/meetup_bkz6ACjOz.svg"
+  },
+  {
+    "id": "11",
+    "name": "Notion",
+    "image": "https://ik.imagekit.io/abidi/onboarding-workflow/notion_4Q4UqprI9_.svg"
   }
 ]
