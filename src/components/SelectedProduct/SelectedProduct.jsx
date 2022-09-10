@@ -1,4 +1,5 @@
 import { AiOutlinePlus } from 'react-icons/ai';
+import Image from 'next/image';
 import PropTypes from 'prop-types';
 import React from 'react';
 import _noop from 'lodash-es/noop';
@@ -13,11 +14,11 @@ function ProductPlaceholder() {
   );
 }
 
-function ProductDetail({ product, onRemove }) {
+function ProductDetails({ product, onRemove }) {
   return (
     <div className="flex flex-col items-center">
       <div className="mb-5">
-        <img
+        <Image
           src={productReader.imageUrl(product)}
           width={50}
           height={50}
@@ -40,7 +41,7 @@ function ProductDetail({ product, onRemove }) {
 export default function SelectedProduct({ product, onRemove }) {
   return (
     <div className="flex h-48 w-48 items-center justify-center border shadow-md">
-      {product ? <ProductDetail product={product} onRemove={onRemove} /> : <ProductPlaceholder />}
+      {product ? <ProductDetails product={product} onRemove={onRemove} /> : <ProductPlaceholder />}
     </div>
 
   );
@@ -60,7 +61,7 @@ SelectedProduct.defaultProps = {
   onRemove: _noop,
 };
 
-ProductDetail.propTypes = {
+ProductDetails.propTypes = {
   product: PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string,
@@ -69,6 +70,6 @@ ProductDetail.propTypes = {
   onRemove: PropTypes.func,
 };
 
-ProductDetail.defaultProps = {
+ProductDetails.defaultProps = {
   onRemove: _noop,
 };

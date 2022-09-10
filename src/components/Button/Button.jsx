@@ -22,6 +22,7 @@ export default function Button({
         'flex items-center justify-center gap-2 w-full p-2 text-white rounded-sm transition-colors duration-200',
         className,
       )}
+      disabled={isDisabled || isLoading}
       onClick={onClick}
     >
       <PropertyControlledComponent shouldShow={isLoading}>

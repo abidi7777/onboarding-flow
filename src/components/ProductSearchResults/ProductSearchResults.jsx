@@ -9,7 +9,7 @@ import productReader from '../../readers/product.reader';
 function ProductDetail({ product }) {
   return (
     <div className="flex items-center gap-2">
-      <div>
+      <div className="flex items-center">
         <Image
           src={productReader.imageUrl(product)}
           alt={productReader.name(product)}
