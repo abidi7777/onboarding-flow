@@ -1,32 +1,22 @@
 import { BsSearch } from 'react-icons/bs';
 import PropTypes from 'prop-types';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import _noop from 'lodash-es/noop';
 
 import ProductSearchResults from '../ProductSearchResults';
 import PropertyControlledComponent from '../PropertyControlledComponent';
 import TextBox from '../TextBox';
-import useOutsideClickListener from '../../hooks/useOutsideClickListener';
+import useProductSearchForm from './useProductSearchForm';
 
 export default function SearchForm({ products, onProductClick }) {
-  const [searchText, setSearchText] = useState('');
-  const [filteredProducts, setFilteredProducts] = useState([]);
-  const [showSearchResults, setShowSearchResults] = useState(false);
-  const { ref } = useOutsideClickListener(() => setShowSearchResults(false));
-
-  useEffect(() => {
-    if (searchText.length < 2) {
-      setFilteredProducts([]);
-    } else {
-      setFilteredProducts(
-        products.filter((product) => product.name.match(new RegExp(searchText, 'gi'))),
-      );
-    }
-  }, [products, searchText]);
-
-  useEffect(() => {
-    setShowSearchResults(searchText.length > 1);
-  }, [searchText]);
+  const {
+    searchText,
+    setSearchText,
+    setShowSearchResults,
+    showSearchResults,
+    filteredProducts,
+    ref,
+  } = useProductSearchForm({ products });
 
   return (
     <form>

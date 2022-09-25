@@ -15,5 +15,5 @@ export default async function clientFetch(url, options) {
 
   const error = await parseData(res);
 
-  throw error;
+  throw Object.create({ status: res.status, error });
 }

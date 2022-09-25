@@ -20,7 +20,7 @@ export default function Textbox({
         type="text"
         placeholder={placeholder}
         className={cx(
-          'w-full border p-2 pr-8 focus:bg-white focus:border-flickering-sea transition-colors duration-200 outline-none',
+          'w-full border p-2 pr-6 focus:bg-white focus:border-flickering-sea transition-colors duration-200 outline-none',
           { 'bg-white': value, 'bg-aircraft-white': !value },
           { 'pl-8': icon },
           className,
@@ -30,9 +30,9 @@ export default function Textbox({
         onBlur={onBlur}
       />
       <PropertyControlledComponent shouldShow={!!value}>
-        <div className="absolute right-2 top-0 flex h-full items-center">
-          <button type="button" onClick={onClearText}>❌</button>
-        </div>
+        <button className="absolute right-0 top-0 flex h-full items-center pr-2 text-xs" type="button" onClick={onClearText}>
+          ❌
+        </button>
       </PropertyControlledComponent>
     </div>
   );

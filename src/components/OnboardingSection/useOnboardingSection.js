@@ -46,11 +46,16 @@ export default function useOnboardingSection(products) {
   const submitForm = useCallback(async () => {
     setIsSubmitting(true);
 
-    await saveUserSelectedProducts({ products: selectedProducts, userId });
+    try {
+      await saveUserSelectedProducts({ products: selectedProducts, userId });
 
-    toast('Successfully submitted');
-    setIsSubmitting(false);
-    removeAllProducts();
+      toast('✅ Successfully submitted');
+      removeAllProducts();
+    } catch (e) {
+      toast(`❌ ${e.message || 'Please try again'}`);
+    } finally {
+      setIsSubmitting(false);
+    }
   }, [selectedProducts, userId]);
 
   useEffect(() => {
